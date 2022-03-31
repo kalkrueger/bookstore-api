@@ -1,0 +1,9 @@
+type Genre {
+    id: String!
+    genre: String!
+    books: [Book]
+}
+
+input AddGenreInput {
+    genre: String!
+}

@@ -1,0 +1,16 @@
+type Book {
+    id: String!
+    title: String!
+    releaseDate: String
+    bestSeller: Boolean
+    authors: [Author]
+    genres: [Genre]
+}
+
+input AddBookInput {
+    title: String!
+    authors: [String!]
+    genres: [String!]
+    releaseDate: String
+    bestSeller: Boolean
+}

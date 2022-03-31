@@ -1,0 +1,23 @@
+type Query {
+    authors: [Author]
+
+    author(id: String!): Author!
+
+    books: [Book]
+
+    book(id: String!): Book!
+
+    bestSellers: [Book]
+
+    genres: [Genre]
+
+    genre(id: String!): Genre!
+}
+
+type Mutation {
+    addAuthor(author: AddAuthorInput!): Author!
+
+    addBook(book: AddBookInput!): Book!
+
+    addGenre(genre: AddGenreInput): Genre!
+}

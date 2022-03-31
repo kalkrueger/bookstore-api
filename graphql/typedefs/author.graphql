@@ -1,0 +1,12 @@
+type Author {
+    id: String!
+    firstName: String!
+    lastName: String!
+    books: [Book]
+    genres: [Genre]
+}
+
+input AddAuthorInput {
+    firstName: String!
+    lastName: String
+}
